@@ -49,10 +49,7 @@ flutter run
 > Make sure Flutter is installed and properly configured. Run flutter doctor to verify.
 
 📸 Screenshots 
-![Home Page](./docs/screenshots/home_page.png)
-![Product Info Loading](./docs/screenshots/product_info_loading.png)
-![Product Info Page](./docs/screenshots/product_info_page.png)
-![Product Info Photoview](./docs/screenshots/product_info_photoview.png)
+![All Screenshots](./docs/all_screenshots.png)
 
 ## 💡 TODO / Roadmap
 
