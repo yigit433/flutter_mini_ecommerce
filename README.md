@@ -1,5 +1,7 @@
 # flutter_mini_ecommerce
 
+![App Banner](./docs/banner.png)
+
 A clean, open-source **e-commerce app built with Flutter**, showcasing modern mobile architecture and Riverpod-based state management.
 
 > ⚠️ **Note:** This project is currently under development. Expect frequent changes & improvements. Stay tuned for updates!
