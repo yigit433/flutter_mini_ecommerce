@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:flutter_mini_ecommerce/core/repository/products/product_repository_impl.dart';
 import 'package:flutter_mini_ecommerce/models/products.dart';
 import 'package:flutter_mini_ecommerce/shared/bottom_navbar.dart';
@@ -176,7 +177,10 @@ class _HomeScreenState extends State<HomeScreen> {
           category: product.category,
           title: product.name,
           price: product.price,
-          isFavorite: false, // favori kontrolün varsa güncelle
+          isFavorite: false,
+          onTap: () {
+            context.push('/product/${product.id}'); 
+          },
         );
       },
     );

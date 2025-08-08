@@ -1,11 +1,10 @@
 import 'package:flutter_mini_ecommerce/models/products.dart';
-
 import 'product_repository.dart';
 
 class ProductRepositoryImpl implements ProductRepository {
   @override
   Future<List<Product>> getAllProducts() async {
-    await Future.delayed(Duration(milliseconds: 500));
+    await Future.delayed(const Duration(milliseconds: 500));
 
     return [
       Product(
@@ -17,7 +16,6 @@ class ProductRepositoryImpl implements ProductRepository {
         price: 21.99,
         imageUrl: "assets/clothes/women/beige_tights.webp",
       ),
-
       Product(
         id: 2,
         category: 'Activewear',
@@ -27,7 +25,6 @@ class ProductRepositoryImpl implements ProductRepository {
         price: 24.99,
         imageUrl: "assets/clothes/women/brown_set_ready_pose.webp",
       ),
-
       Product(
         id: 3,
         category: 'Activewear',
@@ -37,7 +34,6 @@ class ProductRepositoryImpl implements ProductRepository {
         price: 27.49,
         imageUrl: "assets/clothes/women/hoodie_blackoutfit_fitness_model.webp",
       ),
-
       Product(
         id: 4,
         category: 'Activewear',
@@ -47,7 +43,6 @@ class ProductRepositoryImpl implements ProductRepository {
         price: 23.99,
         imageUrl: "assets/clothes/women/outdoor_casual_style_model.webp",
       ),
-
       Product(
         id: 5,
         category: 'Activewear',
@@ -57,7 +52,6 @@ class ProductRepositoryImpl implements ProductRepository {
         price: 25.99,
         imageUrl: "assets/clothes/women/sleek_black_leggings_bra_set.webp",
       ),
-
       Product(
         id: 6,
         category: 'Activewear',
@@ -68,5 +62,14 @@ class ProductRepositoryImpl implements ProductRepository {
         imageUrl: "assets/clothes/women/black_activewear_model_pose.webp",
       ),
     ];
+  }
+
+  Future<Product?> getProductById(int id) async {
+    final products = await getAllProducts();
+    try {
+      return products.firstWhere((product) => product.id == id);
+    } catch (e) {
+      return null;
+    }
   }
 }

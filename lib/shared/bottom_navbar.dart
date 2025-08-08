@@ -1,14 +1,22 @@
 import 'package:flutter/material.dart';
 
 class FancyBottomNavBar extends StatefulWidget {
-  const FancyBottomNavBar({super.key});
+  final int selectedIndex;
+
+  const FancyBottomNavBar({super.key, this.selectedIndex = 0});
 
   @override
   State<FancyBottomNavBar> createState() => _FancyBottomNavBarState();
 }
 
 class _FancyBottomNavBarState extends State<FancyBottomNavBar> {
-  int _selectedIndex = 0;
+  late int _selectedIndex;
+
+  @override
+  void initState() {
+    super.initState();
+    _selectedIndex = widget.selectedIndex;
+  }
 
   final icons = [
     Icons.home,
