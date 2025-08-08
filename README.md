@@ -13,7 +13,7 @@ A clean, open-source **e-commerce app built with Flutter**, showcasing modern mo
 | Status | Feature                        |
 |--------|--------------------------------|
 | ✅     | Project setup & structure      |
-| 🔄     | Product listing from FakeStore API |
+| 🔄     | Product listing from Mock Product API |
 | 🔄     | Product detail view            |
 | 🔄     | Cart management (add/remove)   |
 | 🔲     | Checkout screen (mock)         |
@@ -40,8 +40,8 @@ A clean, open-source **e-commerce app built with Flutter**, showcasing modern mo
 ## 🔧 Getting Started
 
 ```bash
-git clone https://github.com/yigit433/flutter-mini-ecommerce.git
-cd flutter-mini-ecommerce
+git clone https://github.com/yigit433/flutter_mini_ecommerce.git
+cd flutter_mini_ecommerce
 flutter pub get
 flutter run
 ```
