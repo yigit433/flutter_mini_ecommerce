@@ -13,7 +13,7 @@ A clean, open-source **e-commerce app built with Flutter**, showcasing modern mo
 | Status | Feature                        |
 |--------|--------------------------------|
 | ✅     | Project setup & structure      |
-| 🔄     | Product listing from Mock Product API |
+| ✅     | Product listing from Mock Product API |
 | 🔄     | Product detail view            |
 | 🔄     | Cart management (add/remove)   |
 | 🔲     | Checkout screen (mock)         |
