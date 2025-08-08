@@ -49,7 +49,6 @@ flutter run
 > Make sure Flutter is installed and properly configured. Run flutter doctor to verify.
 
 📸 Screenshots 
-![All Screenshots](./docs/all_screenshots.png)
 
 ## 💡 TODO / Roadmap
 
