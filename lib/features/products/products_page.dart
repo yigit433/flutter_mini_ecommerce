@@ -1,9 +1,9 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_mini_ecommerce/core/repository/products/product_repository_impl.dart';
 import 'package:flutter_mini_ecommerce/models/products.dart';
-import 'package:flutter_mini_ecommerce/shared/campaignCard.dart';
-import 'package:flutter_mini_ecommerce/shared/productCard.dart';
+import 'package:flutter_mini_ecommerce/shared/campaign_card.dart';
+import 'package:flutter_mini_ecommerce/shared/campaign_carousel.dart';
+import 'package:flutter_mini_ecommerce/shared/product_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -83,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            CampaignCard(imagePath: 'assets/clothes/women/beige_tights.webp', discountText: '30% Off'),
+            CampaignCarousel(),
             const SizedBox(height: 16),
             _buildFilterRow(),
             const SizedBox(height: 16),
