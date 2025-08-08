@@ -50,6 +50,8 @@ flutter run
 
 📸 Screenshots 
 
+![All Screenshots](./docs/all_screenshots.png)
+
 ## 💡 TODO / Roadmap
 
 - [X] Initial project setup
