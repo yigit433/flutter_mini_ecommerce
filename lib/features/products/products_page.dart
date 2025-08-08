@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mini_ecommerce/core/repository/products/product_repository_impl.dart';
 import 'package:flutter_mini_ecommerce/models/products.dart';
+import 'package:flutter_mini_ecommerce/shared/bottom_navbar.dart';
 import 'package:flutter_mini_ecommerce/shared/campaign_carousel.dart';
 import 'package:flutter_mini_ecommerce/shared/product_card.dart';
 
@@ -90,6 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
+      bottomNavigationBar: FancyBottomNavBar(),
     );
   }
 
