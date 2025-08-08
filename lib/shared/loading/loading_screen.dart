@@ -2,6 +2,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
+/// A full-screen loading overlay with blurred background and Lottie animation.
+/// Can optionally display a message below the animation.
 class LoadingScreen extends StatelessWidget {
   final String? message;
 
@@ -11,7 +13,7 @@ class LoadingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        // 🔹 Arka plan blur + gradient
+        // Background blur with a dark gradient overlay
         Positioned.fill(
           child: BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
@@ -30,7 +32,7 @@ class LoadingScreen extends StatelessWidget {
           ),
         ),
 
-        // 🔹 Ortada Lottie animasyon + mesaj
+        // Centered Lottie animation with optional message
         Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
