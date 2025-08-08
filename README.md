@@ -14,7 +14,7 @@ A clean, open-source **e-commerce app built with Flutter**, showcasing modern mo
 |--------|--------------------------------|
 | ✅     | Project setup & structure      |
 | ✅     | Product listing from Mock Product API |
-| 🔄     | Product detail view            |
+| ✅     | Product detail view            |
 | 🔄     | Cart management (add/remove)   |
 | 🔲     | Checkout screen (mock)         |
 | 🔲     | Local cart persistence (Hive)  |
@@ -54,8 +54,9 @@ flutter run
 ## 💡 TODO / Roadmap
 
 - [X] Initial project setup
-- [ ] Home UI & Product Card
-- [ ] API integration ([FakeStore](https://fakestoreapi.com/))
+- [X] Home UI & Product Card
+- [X] Product Info Page
+- [X] Creating data repository
 - [ ] Cart logic & UI
 - [ ] Checkout screen
 - [ ] Local data saving
